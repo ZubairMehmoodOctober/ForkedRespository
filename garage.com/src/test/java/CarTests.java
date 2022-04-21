@@ -17,6 +17,7 @@ public class CarTests {
 
 	@Test
 	public void canBuildCar() {
+	
 		Car car = this.Car;
 
 		String actualModel = car.getModel();
