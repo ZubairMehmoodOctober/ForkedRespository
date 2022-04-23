@@ -1,7 +1,7 @@
 public class ConvertibleCar extends Car implements ICar {
        private boolean getIsLowerTop;
        private boolean getIsRaiseTop;
-	   private boolean CanStartCar;
+	   private boolean CanStartConvertibleCar;
   
 	public ConvertibleCar(String model, IEngine engine, IIgnition ignitionSystem) {
 		super(model, engine, ignitionSystem);
@@ -15,6 +15,6 @@ public class ConvertibleCar extends Car implements ICar {
 		return getIsRaiseTop;
 	}
 	public void CanStartConvertibleCar () {
-		this.CanStartCar = true;
+		this.CanStartConvertibleCar = true;
 	}
 }
