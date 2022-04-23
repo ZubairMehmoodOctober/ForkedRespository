@@ -17,11 +17,12 @@ public class CarTests {
 
 	@Test
 	public void canBuildCar() {
+	
 		Car car = this.Car;
 
 		String actualModel = car.getModel();
 
-		assertEquals(actualModel, Car.getModel() , "");
+		assertEquals(actualModel, Car.getModel() , "actual car Model");
 	}
 
 	@Test
@@ -30,6 +31,7 @@ public class CarTests {
 
 		boolean isStarted = car.getIsStarted();
 
-		assertTrue(isStarted, "");
+		assertTrue(isStarted, "The car is started");
 	}
+	
 }

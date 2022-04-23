@@ -1,7 +1,5 @@
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-import static org.testng.Assert.fail;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -23,7 +21,7 @@ public class ConvertibleCarTests {
 
 		String actualModel = car.getModel();
 
-		assertEquals(actualModel, Car.getModel() , "");
+		assertEquals(actualModel, Car.getModel() , "Car is Build");
 	}
 
 	@Test
@@ -32,16 +30,22 @@ public class ConvertibleCarTests {
 		
 		boolean isStarted = car.getIsStarted();
 
-		assertTrue(isStarted, "");
+		assertTrue(isStarted, "Convertible Car is started");
 	}
 
 	@Test
 	public void canLowerTop() {
-		fail("not implemented yet");
+		ConvertibleCar c1 = this.Car;
+		c1.lowerTop();
+		boolean LowerTop = c1.lowerTop();
+		assertTrue (LowerTop, "c1 is lower");
 	}
 
 	@Test
 	public void canRaiseTop() {
-		fail("not implemented yet");
+		ConvertibleCar c2 = this.Car;
+		c2.raiseTop();
+		boolean RaiseTop = c2.raiseTop();
+		assertTrue (RaiseTop, "c2 is higher");
 	}
 }
